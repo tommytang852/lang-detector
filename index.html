@@ -1,14 +1,23 @@
 <html>
+<head>
+</head>
+<body>
+<h1 id="lang"></h1>
+</body>
 <script>
 let navLang = navigator.language.toLowerCase();
+let displayText;
+
 if (navLang.includes("zh")) {
     if (navLang.includes("zh-cn")) {
-        alert(navLang + ", Detected Language: HKS")
+        displayText = navLang + ", Detected Language: HKS";
     } else {
-        alert(navLang + ", Detected Language: HKT")
+        displayText = navLang + ", Detected Language: HKT";
     }
 } else {
-    alert(navLang + ", Detected Language: ENG")
+    displayText = navLang + ", Detected Language: ENG";
 }
+alert(displayText);
+document.getElementById("lang").innerText = displayText;
 </script>
 </html>
