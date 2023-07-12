@@ -1,0 +1,14 @@
+<html>
+<script>
+let navLang = navigator.language.toLowerCase();
+if (navLang.includes("zh")) {
+    if (navLang.includes("zh-cn")) {
+        alert(navLang + ", Detected Language: HKS")
+    } else {
+        alert(navLang + ", Detected Language: HKT")
+    }
+} else {
+    alert(navLang + ", Detected Language: ENG")
+}
+</script>
+</html>
